@@ -1,0 +1,39 @@
+#myVideo {
+  position: fixed;
+  object-fit: cover;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.nes-btn {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  color: #1b120f;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 6vw;
+  text-align: center;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #1b120f;
+}
+
+h3 {
+  color: #1b120f;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  padding: 16px;
+  padding-bottom: 0;
+}

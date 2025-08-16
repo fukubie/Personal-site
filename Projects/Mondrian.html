@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    #Drawing-container{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+    }
+    .container{
+      background-color:#000;
+      display:grid;
+      gap:9px;
+      width: 748px;
+      height: 748px;
+      grid-template-columns: 320px 1fr;
+      grid-template-rows: 414px 285px;
+    }
+    #red{
+      background-color: #E72F24;
+      width: 320px;
+      height: 414px;
+
+    }
+    #black{
+      background-color: #232629;
+      width:153px;
+      border-left: 9px solid black;
+    }
+    #flox{
+      display: flex;
+      grid-row-start: 2;
+      grid-column-start: 3;
+      flex-direction: column;
+      margin-bottom: -9px; 
+    }
+    #blue{
+      background-color: #004592;
+      width:50px;
+      height:130px;
+      border-bottom: 10px solid black;
+      
+    }
+    #flexy{
+      display: flex;
+      justify-content: end;
+      background-color: #F0F1EC;
+      grid-column-start: 2;
+      grid-column-end: 3;
+
+    }
+    #yellow{
+      background-color: #F9D01E;
+      width: 198px;
+    }
+    .white{
+      background-color: #F0F1EC;
+    }
+    #whites{
+      background-color: #F0F1EC;
+      width:50px;
+      height: 155px;
+    }
+    #whitew{
+      background-color: #F0F1EC;
+      grid-row-start: 2;
+    }
+    #whiteright{
+      background-color: #F0F1EC;
+      grid-column-start: -1;
+      grid-row-start:-1;
+    }
+    .whitee{
+      background-color: #F0F1EC;
+      margin-left: -9px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id = "Drawing-container">
+  <div class = "container">
+    <div id="red"></div>
+    <div id="flox">
+    <div id="blue"></div>
+    <div id="whites"></div>
+    </div>
+    <div class="white"></div>
+    <div class="whitee"></div>
+    <div id="whiteright"></div>
+    <div class="white"></div>
+    <div id="whitew"></div>
+    <div class="white"></div>
+    <div id="flexy">
+    <div id="yellow"></div>
+    <div id="black"></div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
