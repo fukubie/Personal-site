@@ -1,73 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Abdo's site</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdo's bio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./Portfolio.css">
 </head>
 
 
-<body>
+
+<body class="d-flex h-100 text-center text-bg-dark">
     <video autoplay muted loop id="myVideo">
-        <source src="./assets/orange.mp4" type="video/mp4">
+        <source src="./assets/17486489-hd_1920_1080_30fps.mp4" type="video/mp4">
     </video>
+    <!--header-->
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="./Portfolio.html" class="nes-btn is-primary">Portfolio</a></li>
+                <li class="nav-item"><a href="https://fukubie.github.io/myResume/" class="nes-btn is-success">Resume</a>
+                </li>
+                <li class="nav-item"><a href="./About_me.html" class="nes-btn" aria-current="page">About me</a></li>
+            </ul>
+        </header>
 
-    <div class="nes-container is-dark is-rounded" class="progress0">
-        <h1 class="title" class="text-color">Welcome!</h1>
-    </div>
-
-    <!-- Header -->
-    <section class="header" class="progress0">
-
-        <div class="nes-container is-dark is-rounded">
-            <div id="top-photo">
-                <div id="photo">
-                    <img class="self" src="./assets/IMG_4791-removebg-preview.png" alt="Abdelrahman">
-                    <i class="nes-icon is-small heart"></i>
-                    <i class="nes-icon is-small heart"></i>
-                    <i class="nes-icon is-small is-half heart"></i>
-                </div>
-                <div>
-                    <li>My name is Abdelrahman M</li>
-                    <li>I'm a developer</li>
-                    <li>Cs student</li>
-                    <li>Copywriter</li>
-                </div>
+        <!--Hero-->
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6"> <img src="./assets/IMG_4811-removebg-preview.png" class="d-block mx-lg-auto img-fluid"
+                    alt="Abdelrahman" width="700" height="500" loading="lazy"> </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Abdelrahman M</h1>
+                <p class="lead">Web developer/programmer</p>
+                <div class="d-gri gap-2 d-md-flex justify-content-md-center"> <a href="https://www.linkedin.com/in/anmohamedofficial" class="nes-btn is-primary mx-auto">Contact me</a></div>
             </div>
         </div>
-
-    </section>
-
-    <!-- Testomonials -->
-
-    <!-- links -->
-    <section id="links" class="progress0">
-        <div class="nes-container is-rounded is-dark">
-            <a class="nes-btn" href="About_me.html">About me</a>
-            <a class="nes-btn is-primary" href="Portfolio.html">Portfolio</a>
-            <a class="nes-btn is-success" href="https://fukubie.github.io/myResume/">Resume</a>
-        </div>
-
-    </section>
-
-    <!-- Footer -->
-    <section>
-
-        <div>
-            <!-- github -->
-            <a class="nes-btn" id="account" href="https://github.com/fukubie"><i class="nes-icon github is-medium"></i></a>
-            <!-- linkedin -->
-            <a class="nes-btn" id="accounts" href="https://www.linkedin.com/in/anmohamedofficial"><i class="nes-icon linkedin is-medium"></i></a>
-        </div>
-
-    </section>
+    </div>
 </body>
-
-</html>
